@@ -20,7 +20,7 @@
 
                 <!-- Item -->
                 <div class="item">
-                    <img :src="giochi[immagineAttiva].image" :alt="giochi[immagineAttiva].title" />
+                    <img :src="giochi[immagineAttiva].image" :alt="giochi[immagineAttiva].title" @mouseover="stopInterval" @mouseleave="autoPlay"/>
                     <div class="text">
                         <h3>{{ giochi[immagineAttiva].title }}</h3>
                         <p>

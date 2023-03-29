@@ -58,7 +58,11 @@ createApp({
             this.intervallo = setInterval(this.immaginePrecedente, this.millisecondi);
         },
         autoPlay(){
+            clearInterval(this.intervallo);
             this.intervallo = setInterval(this.immagineSuccessiva, this.millisecondi);
+        },
+        stopInterval(){
+            clearInterval(this.intervallo);
         }
     }
 }).mount("#app");
