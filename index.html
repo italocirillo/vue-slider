@@ -34,7 +34,7 @@
                 <div class="thumbs">
                     <div class="prev" @click="immaginePrecedente"></div>
                     <div class="next" @click="immagineSuccessiva"></div>
-                    <div class="thumb" :class="index === immagineAttiva ? 'active' : ' ' " v-for="(elemento,index) in giochi">
+                    <div class="thumb" @click="immagineAttiva = index" :class="index === immagineAttiva ? 'active' : ' ' " v-for="(elemento,index) in giochi">
                         <img :src="elemento.image" :alt="elemento.title" />
                     </div>
                 </div>

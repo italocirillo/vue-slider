@@ -47,6 +47,6 @@ createApp({
             }else{
                 this.immagineAttiva = this.giochi.length -1;
             }
-        }
+        },
     }
 }).mount("#app");
